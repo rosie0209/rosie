@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaf4f4;
+    margin: 0px;
+}
+
+footer {
+    background-color: #5fa8d3;
+    color: white;
+    text-align: center;
+    padding: 10PX;
+}
+
+aside {
+    width: 23%;
+    float: left;
+}
+
+.card a {
+    display: inline-block;
+}
+
+.card a:hover {
+    background-color: #b5e2fa;
+    color: black;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+article {
+    float: right;
+    width: 73%;
+}
+
+.card {
+    background-color: #fbfbf2;
+    padding: 20px;
+    margin: 20px 20px;
+    border-radius: 20px;
+}
+
+header {
+    background-color: #fbfbf2;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+section {
+    background-color: #fbfbf2;
+    padding: 20px;
+    margin: 20px 20px;
+    border-radius: 20px;
+}
+
+.line {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.g-container {
+    width: 300px;
+    height: 18px;
+    border-radius: 25px;
+    background: #eee;
+}
+
+.g-progress {
+    width: 85%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #b5e2fa;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 255));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+/*動態進度條*/
+
+.progress-moved .g-progress {
+    width: 85%;
+    background-color: #b5e2fa;
+    animation: progressAnimation1 6s;
+}
+
+@keyframes progressAnimation1 {
+    0% {
+        width: 5%;
+        background-color: #eaf4f4;
+    }
+
+    100% {
+        width: 85%;
+        background-color: #b5e2fa;
+    }
+}
+
+
+
+.g-progress2 {
+    width: 80%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #b5e2fa;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 255));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.progress2-moved .g-progress2 {
+    width: 80%;
+    background-color: #b5e2fa;
+    animation: progressAnimation2 6s;
+}
+
+@keyframes progressAnimation2 {
+    0% {
+        width: 5%;
+        background-color: #eaf4f4;
+    }
+
+    100% {
+        width: 80%;
+        background-color: #b5e2fa;
+    }
+}
+
+
+.g-progress3 {
+    width: 75%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #b5e2fa;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 255));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.progress3-moved .g-progress3 {
+    width: 75%;
+    background-color: #b5e2fa;
+    animation: progressAnimation3 6s;
+}
+
+@keyframes progressAnimation3 {
+    0% {
+        width: 5%;
+        background-color: #eaf4f4;
+    }
+
+    100% {
+        width: 75%;
+        background-color: #b5e2fa;
+    }
+}
+
+.g-progress4 {
+    width: 65%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #b5e2fa;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 255));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+
+.progress4-moved .g-progress4 {
+    width: 65%;
+    background-color: #b5e2fa;
+    animation: progressAnimation4 6s;
+}
+
+@keyframes progressAnimation4 {
+    0% {
+        width: 5%;
+        background-color: #eaf4f4;
+    }
+
+    100% {
+        width: 65%;
+        background-color: #b5e2fa;
+    }
+}
+
+.right {
+    float: right;
+}
+
+.photo {
+    width: 300px;
+    height: 180px;
+    overflow: hidden;
+
+}
+
+.photo img {
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+
+}
+
+/*利用transition做出圖片放大效果*/
+
+.photo img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.left {
+    float: left;
+}
+
+.photo1 {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.photo1 img {
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+
+}
+
+.photo1 img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.music {
+    text-align: center;
+}
+
+.goTop {
+    height: 40px;
+    width: 40px;
+    background: red;
+    border-radius: 50px;
+    position: fixed;
+    top: 90%;
+    right: 3%;
+    display: none;
+}
+
+.goTop span {
+    color: #fff;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+
+.up {
+    text-align: right;
+}
+
+.g-progress5 {
+    width: 90%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #b5e2fa;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 255));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.progress5-moved .g-progress5 {
+    width: 90%;
+    background-color: #b5e2fa;
+    animation: progressAnimation5 6s;
+}
+
+@keyframes progressAnimation5 {
+    0% {
+        width: 5%;
+        background-color: #eaf4f4;
+    }
+
+    100% {
+        width: 90%;
+        background-color: #b5e2fa;
+    }
+}
+
+
+.g-progress6 {
+    width: 95%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #b5e2fa;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 255));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.progress6-moved .g-progress6 {
+    width: 95%;
+    background-color: #b5e2fa;
+    animation: progressAnimation6 6s;
+}
+
+@keyframes progressAnimation6 {
+    0% {
+        width: 5%;
+        background-color: #eaf4f4;
+    }
+
+    100% {
+        width: 95%;
+        background-color: #b5e2fa;
+    }
+}
+
+.g-progress7 {
+    width: 80%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #b5e2fa;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 255));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.progress7-moved .g-progress7 {
+    width: 80%;
+    background-color: #b5e2fa;
+    animation: progressAnimation7 6s;
+}
+
+@keyframes progressAnimation7 {
+    0% {
+        width: 5%;
+        background-color: #eaf4f4;
+    }
+
+    100% {
+        width: 80%;
+        background-color: #b5e2fa;
+    }
+}
+
+.g-progress8 {
+    width: 75%;
+    height: inherit;
+    border-radius: 25px 0 0 25px;
+    background: #b5e2fa;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 255));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.progress8-moved .g-progress8 {
+    width: 75%;
+    background-color: #b5e2fa;
+    animation: progressAnimation8 6s;
+}
+
+@keyframes progressAnimation8 {
+    0% {
+        width: 5%;
+        background-color: #eaf4f4;
+    }
+
+    100% {
+        width: 75%;
+        background-color: #b5e2fa;
+    }
+}
+
+
+.g-container1 {
+    width: 300px;
+    height: 18px;
+    border-radius: 25px;
+    background: #eee;
+}
+
+.music1 {
+    text-align: center;
+    color: #eaf4f4;
+}
+
+.photo2 {
+    width: 450px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.photo2 img {
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+
+}
+
+.photo2 img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+.photo3 {
+    width: 320px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.photo3 img {
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+
+}
+
+.photo3 img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.resume {
+    font-size: 50px;
+    text-align: center;
+    font-family: stliti;
+}
+
+h1 {
+    text-align: center;
+}
+
+.name {
+    font-family: stliti;
+    text-align: center;
+}
+
+.photo4 {
+    width: 200px;
+    height: 260px;
+    overflow: hidden;
+}
+
+.photo4 img {
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+
+}
+
+.photo4 img:hover {
+    transform: scale(1.2, 1.2);
+}
